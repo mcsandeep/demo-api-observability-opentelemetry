@@ -13,6 +13,19 @@ This is a demo project running on Docker, that shows how to configure Tyk Gatewa
 ```
 git clone https://github.com/TykTechnologies/demo-api-observability-opentelemetry.git
 ```
+Before you go to step 2 please follow the below instructions.
+
+a: Please sign up for a Tyk Cloud Account and verify yourselves as user.
+
+b: You will need to add Hybrid gateways to the existing Control plane that you have deployed in the Tyk Cloud account
+
+c: Edit the tyk.conf file file within the repo that you cloned locally and add in the specific entries for RPC_KEY, API_KEY and CONN_STRNG from the values you can find in your Tyk Cloud Dashboard
+
+    "slave_options": {
+        "use_rpc": true,
+        "rpc_key": "RPC_KEY",
+        "api_key": "API_KEY",
+        "connection_string": "CONN_STRNG",
 
 2. Start the services
 
