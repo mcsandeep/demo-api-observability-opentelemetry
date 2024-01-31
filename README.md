@@ -26,6 +26,7 @@ c: Edit the tyk.conf file file within the repo that you cloned locally and add i
         "rpc_key": "RPC_KEY",
         "api_key": "API_KEY",
         "connection_string": "CONN_STRNG",
+        "group_id": "GRP_ID"
 
 2. Start the services
 
