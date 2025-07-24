@@ -12,6 +12,7 @@ services:
         - TYK_GW_OPENTELEMETRY_ENABLED=true
         - TYK_GW_OPENTELEMETRY_EXPORTER=grpc
         - TYK_GW_OPENTELEMETRY_ENDPOINT=otel-collector:4317
+        - TYK_GW_JWTSSLINSECURESKIPVERIFY=true
     volumes:
       - ./deployments/tyk-gateway/apps:/opt/tyk-gateway/apps
       - ./deployments/tyk-gateway/tyk.conf:/opt/tyk-gateway/tyk.conf
